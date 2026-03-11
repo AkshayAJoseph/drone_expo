@@ -133,6 +133,42 @@
                 height: 38px;
             }
         }
+        
+        /* Back button styling */
+        .back-btn {
+            background: rgba(123, 94, 167, 0.1);
+            border: 1px solid var(--accent-primary);
+            color: var(--accent-primary);
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .back-btn:hover {
+            background: var(--accent-primary);
+            color: #fff;
+            transform: translateY(-1px);
+            text-decoration: none;
+        }
+        
+        .back-btn i {
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 767px) {
+            .back-btn {
+                padding: 6px 12px;
+                font-size: 0.7rem;
+            }
+        }
     </style>
 </head>
 
@@ -140,14 +176,23 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark-transparent border-bottom border-secondary">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
             <a class="navbar-brand orbitron flex items-center gap-2" href="index.html">
                 <img src="acm-logo.png" alt="ACM" class="logo-img object-contain" onerror="this.style.display='none'">
                 <span>ASCEND <span class="text-accent">'26</span></span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    <span class="d-none d-sm-inline">Back to Home</span>
+                    <span class="d-inline d-sm-none">Back</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
