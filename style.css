@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Ceoruse';
+    src: url('Ceoruse-Font/Ceoruse-Font/ceoruse.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --cursor-size: 20px;
     --cursor-outline-size: 50px;
