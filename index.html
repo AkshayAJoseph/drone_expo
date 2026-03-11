@@ -29,35 +29,7 @@
         }
     </style>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        deepDark: '#08090d',
-                        surface: '#0e1117',
-                        surfaceLight: '#161a24',
-                        accentPrimary: '#7B5EA7',
-                        accentSecondary: '#00D4FF',
-                        textMuted: '#8b8fa3',
-                    },
-                    fontFamily: {
-                        orbitron: ['Orbitron', 'sans-serif'],
-                        inter: ['Inter', 'sans-serif'],
-                        mono: ['JetBrains Mono', 'monospace'],
-                        ceoruse: ['Ceoruse', 'serif'],
-                    },
-                }
-            }
-        }
-        
-        // Ensure page is visible and Tailwind loads
-        document.addEventListener('DOMContentLoaded', function() {
-            document.body.style.visibility = 'visible';
-            console.log('Tailwind loaded, page ready');
-        });
-    </script>
+    <link rel="stylesheet" href="tailwind-dist.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
